@@ -1,10 +1,10 @@
 .footer{
   background: #69F0AE;
   font-size: 32px;
-  @include breakpoint($pad){
+  @include pad{
     font-size: 48px;
   }
-  @include breakpoint($desktop){
+  @include desktop{
     font-size: 64px;
   }
 }

@@ -2,8 +2,14 @@ $pad: 576px;
 $desktop: 767px;
 
 
-@mixin breakpoint($size) {
-    @media (min-width: $size) {
+@mixin pad {
+    @media (min-width: $pad) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
         @content;
     }
 }

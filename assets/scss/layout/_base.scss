@@ -3,6 +3,8 @@
 *,*::after,*::before{
   box-sizing: border-box;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 body{
@@ -23,3 +25,10 @@ hr{
   margin: 16px 0;
 }
 
+h1 {
+  display: none;
+}
+
+li{
+  list-style: none;
+}
