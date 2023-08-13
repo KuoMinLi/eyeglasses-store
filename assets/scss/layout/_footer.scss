@@ -1,10 +1,102 @@
+.footer-bg {
+  background: $primary;
+}
+
 .footer{
-  background: #69F0AE;
-  font-size: 32px;
+  padding: 24px 14px;
   @include pad{
-    font-size: 48px;
+    padding: 48px 36px;
+    padding-bottom: 40px;
   }
   @include desktop{
-    font-size: 64px;
+    padding-bottom: 32px;
+  }
+  &-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #FFFFFF;
+    @include pad{
+      display: block;
+      padding-bottom: 32px;
+    }
+  }
+  &-content {
+    @include pad{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+  }
+  &-menu {
+    display: none;
+    @include pad{
+      display: flex;
+      gap: 0 48px;
+    }
+  }
+  &-info {
+    p  {
+      margin-bottom: 8px;
+    }
+    :nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    @include pad{
+      p {
+        font-size: 36px;
+      }
+      
+    }
+  }
+  &-icon {
+    img {
+      margin-left: 8px;
+      width: 24px;
+      height: 24px;
+      @include pad{
+        margin-left: 16px;
+        width: 40px;
+        height: 40px;
+      }
+      @include desktop{
+        margin-left: 32px;
+        width: 48px;
+        height: 48px;
+      }
+    }
+    img:nth-child(1){
+      margin-left: 0;
+    }
+  }
+  &-text {
+    padding-top: 16px;
+    color: #FFFFFF;
+    p {
+      margin-bottom: 8px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    :nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    @include pad{
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      p, li {
+        margin-bottom: 0;
+      }
+      &-menu {
+        display: flex;
+        gap: 0 48px;
+      }
+      
+    }
+    
   }
 }
