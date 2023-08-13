@@ -39,17 +39,14 @@
     }
   }
   &-info {
-    p  {
+    p, a, span {
       margin-bottom: 8px;
+      @include pad{
+        font-size: 36px;
+      }
     }
     :nth-last-child(1) {
       margin-bottom: 0;
-    }
-    @include pad{
-      p {
-        font-size: 36px;
-      }
-      
     }
   }
   &-icon {
